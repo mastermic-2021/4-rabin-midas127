@@ -9,6 +9,8 @@ n = read("input.txt");
 
 \\print(n);
 
+\\Ici la seule stratégie est d'effectuer autant de tentatives que possible, jusqu'à obtenir un chiffré qui vérifie les bonnes conditions molulaires, puis d'utiliser les différences obtenues dans les bits de parité pour factoriser n.
+
 chiffre(a) = [a^2%n,kronecker(a,n),a%2];
 
 attaque_chiffre(a) = [a^2%n, -kronecker(a,n), a%2];
